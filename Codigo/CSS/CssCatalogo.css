@@ -1,0 +1,125 @@
+html {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 20px;
+}
+.navbar {
+    background-color: black; 
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-productos {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: black;
+  
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  flex: 1;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none; 
+}
+
+.flecha {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.flecha:hover {
+  color: #f1c40f;
+}
+
+.tarjeta-producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  min-height: 500px;
+  color: white;
+  background-color: black;
+}
+.descripcion{
+  word-wrap: break-word;
+  padding: 0 10 px;
+}
+.tarjeta-producto:hover {
+  transform: scale(1.05);
+}
+
+.imagen-producto1{
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+}
+
+.imagen-especial {
+  object-fit: contain !important;
+}
+
+.InfoProd {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.info-producto button {
+  margin-top: auto; 
+}
+.precio {
+  font-weight: bold;
+  color:darkgoldenrod;
+  font-size: 1.2rem;
+}
+
+details summary {
+  cursor: pointer;
+  color: #a07509;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+details[open] summary {
+  margin-bottom: 5px;
+}
+
+.conjuntos-destacados {
+  display: flex;
+  width: 100%;
+}
+
+.conjunto {
+  position: relative;
+  width: 50%;
+  height: 50vw;
+  overlay: hidden;
+}
+
+.conjunto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
