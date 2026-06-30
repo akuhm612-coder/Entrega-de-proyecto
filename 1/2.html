@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header
+    
+    <h1> prueba </h1>
+    <nav> 
+        <ul>
+            <li> <a href="#"> elementos en bloque</a></li>
+            <li> <a href="#"> elementos en linea</a></li>
+            <li> <a href="#"> estructura semantica </a></li>
+        </ul>
+        <!-- la etiqueta nav sirve para la navegacion -->
+    </nav>
+    <hr> 
+    <!-- hr es una linea orizontal que se usa para dividir-->
+    <main> 
+        <section id = bloque >
+        <h2> elementos en bloque</h2>
+        <p> <strong> regla de oro:</strong> Estos elementos siempre empiezan en una nueva linea y ocupan el 100% del ancho disponible </p>
+        <div style="background-color: gray;"> soy un div  </div>
+        <p> soy un parrafo. Agrupado a un texto y dejo un margen arriba y abajo </p>
+        <blockquote> soy un blockquote. Se usa para citas y suelo venir con un margen por defecto</blockquote>
+    </section>
+
+    <section> 
+        <h2> elementos de linea</h2>
+        <p> <strong> Regla de oro: </strong> Estos elementos solo ocupan el ancho necesario para su contenido y no genera un salto de linea.</p>
+
+        <p> denro de este parrafo (en el bloque), tengo un <span> span que es un contenedor en linea </span>. Tambien puedo usar <strong> strong para negrita y </strong>
+          <em> em para cursiva </em> <i> Ademas tenemos la etiqueta i.</i> todo fluye en una misma region</p>
+          
+    <p> Ademas tenemos los links con etiquetas en linea </p>
+    <a href="https//www.google.com" target="_blank" title="busca cualquier cosa"
+    >Google</a>
+    <a href = "https//www.github.com" title="el hogar del codigo" >Github</a>
+
+    <p> pon br si no quieres que los links queden en la misma linea </p>
+    <a href="https//www.google.com" target="_blank" title="busca cualquier cosa"
+    >Google</a>
+    <br> 
+    <!-- pones br si no quieres que los links the queden juntos-->
+    <a href = "https//www.github.com" title="el hogar del codigo" >Github</a>
+    
+    <p> las imagenes tambien son elementos en linea</p>
+    <img src = "https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?fit=960%2C720"
+    alt = "mandala" style= "width: 30%">
+     <img src = "https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?fit=960%2C720"
+    alt = "mandala" style= "width: 30%">
+       <!-- Como el div es el padre de la imagen es quien define el display -->
+        <div> <img src= "https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?fit=960%2C720" alt = "mandala" style="width: 30%"> </div>
+        <p> etiquetas pequeñas <small> yo soy un texto pequeño </small></p>
+    </section>
+    <hr> 
+    <section id="tablas">
+        <h2> Representacion de datos</h2>
+        <p> las tablas se usan para datos estructurados, no para el diseño de paginas </p>
+       <table border="1" >
+
+          <thead>
+
+            <tr>
+
+              <th>TA</th>
+
+              <th>TE</th>
+
+              <th>TI</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+
+              <td>
+
+                X
+
+              </td>
+
+              <td>
+
+                O
+
+              </td>
+
+              <td>
+
+                O
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td>
+
+                O
+
+              </td>
+
+              <td>
+
+                X
+
+              </td>
+
+              <td>
+
+                X
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td>
+
+                X
+              </td>
+
+              <td>
+
+                O
+
+              </td>
+
+              <td>
+
+                X
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+        
+    </section>
+    <form action="#" method="get">
+        <div> 
+            <label for="nombre"> Nombre: </label>
+            <input type="text"> 
+         </div>
+         <div>
+            <label for="contraseña"> contraseña</label>
+            <input type="password">
+         </div>
+
+         <div>
+            <label for="email"> email</label>
+            <input type="email"> 
+         </div>
+         <div>
+            <label for="fecha de nacimiento"> fecha de nacimiento</label>
+            <input type="date">
+         </div>
+         <div>
+            <label for="color favorito"> color favorito</label>
+            <input type="color">
+         </div>
+         <div>
+         <p> Genero:</p>
+         <label for = "masculino"> masculino</label>
+         <input type="radio">
+         <label for = "femenino"> femenino</label>
+         <input type = "radio">
+         <label for = "otro"> otro </label>
+         <input type = "radio"> 
+         <label for = "prefiero no decirlo"> prefiero no decirlo</label>
+         <input type = "radio"> 
+         </div>
+         
+    </form>
+    </main>
+</body>
+</html>

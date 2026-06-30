@@ -1,0 +1,11 @@
+.app-navbar {
+  border-bottom: 1px solid #262626;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link.active {
+  color: #ffc107 !important;
+}

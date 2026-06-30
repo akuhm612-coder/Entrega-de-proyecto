@@ -1,0 +1,165 @@
+.home-shell {
+  background: #000;
+  color: #fff;
+}
+
+.home-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('/imagenes/TiendaRopas.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  margin: 0;
+  letter-spacing: 0.2em;
+}
+
+.hero-divider {
+  width: 6rem;
+  height: 5px;
+  margin: 24px auto;
+  background: #fff;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hero-icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-icons i:hover {
+  transform: scale(1.15);
+  color: #f1c40f;
+}
+
+.featured-sets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.featured-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.85));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.home-text-block {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #dcdcdc;
+  line-height: 1.8;
+}
+
+.product-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.carousel-button {
+  border: 1px solid #444;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  min-width: 280px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.carousel-item-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.carousel-price {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.carousel-item button {
+  margin-top: auto;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #f1c40f;
+  color: #000;
+  cursor: pointer;
+}

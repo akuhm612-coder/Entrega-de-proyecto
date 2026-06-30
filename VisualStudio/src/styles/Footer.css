@@ -1,0 +1,19 @@
+.site-footer {
+  padding: 2rem 1rem;
+  background: #111;
+  color: #ccc;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0 0 1rem;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
