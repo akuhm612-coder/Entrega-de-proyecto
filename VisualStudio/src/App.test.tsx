@@ -12,5 +12,7 @@ describe('App routes', () => {
     )
 
     expect(screen.getByRole('heading', { name: /catálogo/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /nuevos/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /de tela/i })).toBeInTheDocument()
   })
 })

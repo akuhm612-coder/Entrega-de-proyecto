@@ -7,12 +7,47 @@
 body {
     background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
     padding: 20px;
+    min-height: 100vh;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+
+.nav-home-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-home-link:hover,
+.nav-home-link:focus-visible {
+    color: #f1c40f;
+    transform: scale(1.1);
+    background-color: rgba(241, 196, 15, 0.15);
+}
+
+.nav-home-link .material-symbols-outlined {
+    font-size: 28px;
+}
+
+form {
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form {

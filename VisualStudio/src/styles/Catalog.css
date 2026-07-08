@@ -1,23 +1,67 @@
 .catalog-shell {
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 4rem;
   min-height: calc(100vh - 72px);
-  background: #000;
+  background: linear-gradient(135deg, #050505 0%, #121212 100%);
   color: #fff;
+}
+
+.catalog-hero {
+  margin-bottom: 2.25rem;
 }
 
 .catalog-shell h1 {
   margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 3vw, 2.7rem);
 }
 
 .catalog-subtitle {
   color: #ccc;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  max-width: 700px;
 }
 
-.catalog-grid {
+.catalog-section {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.catalog-section-header h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.35rem;
+}
+
+.catalog-section-header p {
+  margin-bottom: 0;
+  color: #b8b8b8;
+}
+
+.catalog-section-badge {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: #f7b731;
+  color: #111;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.catalog-carousel {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .product-detail-grid {
